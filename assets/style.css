@@ -1,0 +1,42 @@
+:root{
+--bg:#060709;
+--card:#0e1416;
+--muted:#9aa6a3;
+--accent:#00d27a;
+--glass: rgba(255,255,255,0.03);
+}
+
+
+html,body{height:100%;}
+body{
+background: linear-gradient(180deg,var(--bg), #071013 120%);
+font-family: 'Vazirmatn', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+color: #e6f7ef;
+}
+
+
+.card-auth{
+background: linear-gradient(180deg,var(--card), rgba(0,0,0,0.2));
+border: 1px solid rgba(255,255,255,0.04);
+box-shadow: 0 10px 30px rgba(2,6,8,0.6);
+border-radius: 14px;
+}
+
+
+.btn-accent{
+background: linear-gradient(90deg,var(--accent), #00c36a);
+color: #02110a;
+border: none;
+}
+
+
+.form-control:focus{
+border-color: rgba(0,210,122,0.9);
+box-shadow: 0 0 0 0.15rem rgba(0,210,122,0.12);
+}
+
+
+.logo-accent{
+color: var(--accent);
+.small-muted{color:var(--muted);}
+}

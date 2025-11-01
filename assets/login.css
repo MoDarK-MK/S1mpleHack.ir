@@ -1,0 +1,82 @@
+/* assets/login.css */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+.login-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));
+  border: 1px solid rgba(0,210,122,0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7), 0 0 24px rgba(0,210,122,0.1) inset;
+  transition: all 0.35s ease;
+}
+.login-card:hover {
+  box-shadow: 0 14px 60px rgba(0,0,0,0.8), 0 0 36px rgba(0,210,122,0.18) inset;
+  transform: translateY(-4px);
+}
+.logo-accent {
+  color: #00d27a;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.form-control {
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,210,122,0.2);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.form-control:focus {
+  background: rgba(255,255,255,0.08);
+  border-color: #00d27a;
+  box-shadow: 0 0 8px #00d27a33;
+  outline: none;
+  color: #fff;
+}
+.btn-accent {
+  background: #00d27a;
+  border: none;
+  color: #0c0c0c;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  transition: all 0.35s ease;
+}
+.btn-accent:hover {
+  background: #00d27a;
+  box-shadow: 0 0 14px #00d27a, 0 0 28px #00d27a55;
+  transform: translateY(-2px);
+}
+.small-muted {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+a.text-accent {
+  color: #00d27a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a.text-accent:hover {
+  text-decoration: underline;
+  color: #00ffa5;
+}
