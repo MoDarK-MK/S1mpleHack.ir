@@ -80,3 +80,76 @@ a.text-accent:hover {
   text-decoration: underline;
   color: #00ffa5;
 }
+    body {
+        background-color: #0b0b0b;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .signup-card {
+        background: rgba(0, 210, 122, 0.05);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 210, 122, 0.25);
+        box-shadow: 0 0 25px rgba(0, 210, 122, 0.2);
+        border-radius: 18px;
+        padding: 2rem;
+        width: 100%;
+        max-width: 400px;
+        transition: all 0.3s ease;
+    }
+
+    .signup-card:hover {
+        box-shadow: 0 0 40px rgba(0, 210, 122, 0.35);
+        transform: translateY(-2px);
+    }
+
+    .logo-accent {
+        color: #00d27a;
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    .btn-accent {
+        background-color: #00d27a;
+        border: none;
+        color: #000;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .btn-accent:hover {
+        background-color: #00ff99;
+        transform: scale(1.03);
+    }
+
+    .text-accent {
+        color: #00d27a;
+        text-decoration: none;
+    }
+
+    .text-accent:hover {
+        color: #00ff99;
+    }
+
+    .password-strength {
+        height: 6px;
+        border-radius: 6px;
+        background: #222;
+        overflow: hidden;
+        margin-top: 6px;
+    }
+
+    .password-strength .bar {
+        height: 100%;
+        width: 0%;
+        transition: width 0.4s ease, background 0.4s ease;
+    }
+
+    .form-check-label {
+        font-size: 0.9rem;
+        color: #aaa;
+    }

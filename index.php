@@ -13,6 +13,8 @@ $loggedIn = isset($_SESSION['user_id']);
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/stylemain.css">
+    <link rel="icon" type="image/png" href="web\mask32.png">
+
 </head>
 
 <body>
@@ -155,15 +157,14 @@ $loggedIn = isset($_SESSION['user_id']);
         </section>
 
         <section class="github-box text-center my-5">
-            <div class="glass-card p-4">
+            <div class="glass-card p-4 pulse-box">
                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub Logo" width="50"
                     height="50" class="github-logo mb-3">
                 <h5 class="text-light mb-2">Check out our GitHub Repository</h5>
                 <p class="muted-sm mb-3">Explore the source code, contribute, or star the project.</p>
-                <a href="https://github.com/yourusername" target="_blank" class="btn btn-glow">Visit GitHub</a>
+                <a href="https://github.com/MoDarK-MK" target="_blank" class="btn btn-glow">Visit GitHub</a>
             </div>
         </section>
-
 
         <footer class="mt-4 small-muted text-center">© s1mplehack — Security Learning & Defensive Tools</footer>
     </main>

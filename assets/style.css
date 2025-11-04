@@ -40,3 +40,79 @@ box-shadow: 0 0 0 0.15rem rgba(0,210,122,0.12);
 color: var(--accent);
 .small-muted{color:var(--muted);}
 }
+
+.github-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-card {
+  position: relative;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 210, 122, 0.07);
+  border: 1px solid rgba(0, 210, 122, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 210, 122, 0.15), inset 0 0 15px rgba(0, 210, 122, 0.1);
+  transition: all 0.5s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 210, 122, 0.2), transparent 70%);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+.glass-card:hover::before {
+  opacity: 1;
+  animation: pulse-glow 2.5s infinite ease-in-out;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 45px rgba(0, 210, 122, 0.3), inset 0 0 30px rgba(0, 210, 122, 0.15);
+}
+
+.github-logo {
+  filter: drop-shadow(0 0 10px rgba(0, 210, 122, 0.6));
+  animation: float 3s ease-in-out infinite;
+}
+
+.btn-glow {
+  background: linear-gradient(90deg, #00d27a, #007a4d);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 210, 122, 0.4);
+}
+
+.btn-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 24px rgba(0, 210, 122, 0.8);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes pulse-glow {
+  0% { opacity: 0.3; box-shadow: 0 0 10px rgba(0, 210, 122, 0.2); }
+  50% { opacity: 0.8; box-shadow: 0 0 40px rgba(0, 210, 122, 0.5); }
+  100% { opacity: 0.3; box-shadow: 0 0 10px rgba(0, 210, 122, 0.2); }
+}
