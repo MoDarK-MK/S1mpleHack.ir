@@ -13,3 +13,53 @@ body{font-family:'Inter',sans-serif;}
     .glow-text{color:#00d27a;text-shadow:0 0 6px #00d27a55,0 0 12px #00d27a33;}
     footer{opacity:0.85}
     @media(max-width:768px){.hero-left{max-width:100%;}.hero{flex-direction:column;align-items:flex-start}}
+
+.github-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 210, 122, 0.08);
+  border: 1px solid rgba(0, 210, 122, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 210, 122, 0.1), inset 0 0 20px rgba(0, 210, 122, 0.1);
+  transition: all 0.4s ease;
+  width: 100%;
+  max-width: 500px;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 45px rgba(0, 210, 122, 0.2), inset 0 0 30px rgba(0, 210, 122, 0.15);
+}
+
+.github-logo {
+  filter: drop-shadow(0 0 10px rgba(0, 210, 122, 0.6));
+  animation: float 3s ease-in-out infinite;
+}
+
+.btn-glow {
+  background: linear-gradient(90deg, #00d27a, #007a4d);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 210, 122, 0.4);
+}
+
+.btn-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 24px rgba(0, 210, 122, 0.8);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
